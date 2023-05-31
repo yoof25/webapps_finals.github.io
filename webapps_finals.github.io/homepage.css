@@ -1,0 +1,115 @@
+body {
+    background-color: #94bdc6;
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+  
+.headerLeft {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+  
+.headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.homeImg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+  
+.apptButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+  
+h1 {
+    margin: 0;
+    font-size: 64px;
+}
+  
+h2 {
+    margin: 0;
+    font-size: 32px;
+}
+  
+p {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: #6d949d;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.circle1 {
+    top: 100px;
+    left: 50px;
+}
+  
+.circle2 {
+    top: -100px;
+    right: -75px;
+    width: 500px;
+    height: 500px;
+}
+  
+.circle3 {
+    bottom: -50px;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+}
+  
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+  
+    .headerLeft {
+        text-align: left;
+        margin-bottom: 0;
+        max-width: 50%;
+    }
+
+    .headerRight {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
